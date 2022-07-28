@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Stack } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import BudgetCard from './components/BudgetCard';
 
 function App() {
  return (
@@ -19,7 +20,10 @@ function App() {
     gap: "1rem",
     alignItems: "flex-start"
   }}
-  ></div>
+  >
+
+    <BudgetCard name={"Entertainment"} amount = {100} max = {1000}></BudgetCard>
+  </div>
   </Container>
  
  )
